@@ -4,6 +4,23 @@ import * as fs from "fs";
 import * as path from "path";
 import logService from "./log-service";
 
+function installAndPackRecursively(
+    packageName: string,
+    mainPackage?: string
+): void {
+    logService.dependenciesList.add(packageName);
+    installPackage(packageName, mainPackage);
+    const packageDependencies = getDependencies(
+        packageName,
+        mainPackage
+    );
+    for (const dep of packageDependencies) {
+        installAndPackRecursively(dep, mainPackage);
+    }
+    createTarball(packageName, mainPackage);
+    uninstallPackage(packageName, mainPackage);
+}
+
 function installPackage(packageName: string, parentPackage: string): void {
     logService.addLog(
         parentPackage,
@@ -102,6 +119,7 @@ function uninstallPackage(packageName: string, parentPackage: string): void {
 }
 
 export default {
+    installAndPackRecursively,
     installPackage,
     getDependencies,
     createTarball,
