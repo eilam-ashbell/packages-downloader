@@ -72,6 +72,18 @@ function getDependencies(packageName: string, parentPackage: string): string[] {
     }
 }
 
+function getPackageVersion(packageName: string): string {
+    const packageDir = config.packagesDir + packageName;
+    // read package.json of the package
+    const packageJson = JSON.parse(
+        fs.readFileSync(path.join(packageDir, "package.json"), "utf8")
+    );
+    // read dependencies of the package
+    const version = packageJson['version']
+    logService.packageVersion.push(version)
+    return version
+}
+
 function createTarball(packageName: string, parentPackage: string): void {
     // define a path for the tarball file
     const packageDir = config.packagesDir + packageName;
@@ -122,6 +134,7 @@ export default {
     installAndPackRecursively,
     installPackage,
     getDependencies,
+    getPackageVersion,
     createTarball,
     uninstallPackage,
 };

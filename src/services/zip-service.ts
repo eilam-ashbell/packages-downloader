@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Zip from "node-zip";
 import config from "../../config";
+import npmService from "./npm-service";
 
 function packFolderAsZip(folderPath: string, mainPackage: string): void {
     const zip = new Zip();
@@ -16,13 +17,13 @@ function packFolderAsZip(folderPath: string, mainPackage: string): void {
 
     // Generate the zip file data
     const zipData = zip.generate({ type: "nodebuffer" });
-    const zipPath = path.join(config.tarballDir, `${mainPackage}.zip`);
+    const zipPath = path.join(config.zipDir, `${mainPackage}-${npmService.getPackageVersion(mainPackage)}.zip`);
 
     // Write the zip file data to a file
     fs.writeFileSync(zipPath, zipData);
 }
 
-// Define a function to recursively add files to the zip object
+// Recursively add files to the zip object
 function addFilesToZip(zip, folderPath, relativePath): void {
     const files = fs.readdirSync(folderPath);
 

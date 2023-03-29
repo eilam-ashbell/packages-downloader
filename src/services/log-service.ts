@@ -6,6 +6,7 @@ const installedList: Set<string> = new Set()
 const packedList: Set<string> = new Set()
 const notPackedList: Set<string> = new Set()
 const uninstalledList: Set<string> = new Set()
+const packageVersion: string[] = []
 
 function createLogFiles(packageName: string): void {
     const logFolder = `${config.logDir}`
@@ -33,5 +34,6 @@ export default {
     installedList,
     packedList,
     notPackedList,
-    uninstalledList
+    uninstalledList,
+    packageVersion
 }
