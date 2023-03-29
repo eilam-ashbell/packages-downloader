@@ -17,6 +17,16 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "node-zip": "^1.1.1"
+    "@codemirror/buildhelper": "^0.1.16",
+    "@codemirror/commands": "^6.2.2",
+    "@isaacs/import-jsx": "^4.0.1",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "blanket": "^1.2.3",
+    "covert": "^1.1.1",
+    "fs-extra": "^11.1.1",
+    "node-zip": "^1.1.1",
+    "rollup": "^3.20.2",
+    "tap": "^16.3.4"
   }
 }

@@ -3,9 +3,11 @@ import path from "path";
 import Zip from "node-zip";
 import config from "../../config";
 import npmService from "./npm-service";
+import logService from "./log-service";
 
 function packFolderAsZip(folderPath: string, mainPackage: string): void {
     const zip = new Zip();
+    const packageVersion = npmService.getPackageVersion(mainPackage)
 
     // Call the function to add files to the zip object
     addFilesToZip(zip, folderPath, "");
@@ -17,7 +19,10 @@ function packFolderAsZip(folderPath: string, mainPackage: string): void {
 
     // Generate the zip file data
     const zipData = zip.generate({ type: "nodebuffer" });
-    const zipPath = path.join(config.zipDir, `${mainPackage}-${npmService.getPackageVersion(mainPackage)}.zip`);
+    const zipPath = path.join(
+        config.zipDir,
+        `${mainPackage}-${packageVersion}.zip`
+    );
 
     // Write the zip file data to a file
     fs.writeFileSync(zipPath, zipData);

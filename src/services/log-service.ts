@@ -1,39 +1,40 @@
 import config from "../../config";
 import * as fs from "fs";
 
-const dependenciesList: Set<string> = new Set()
-const installedList: Set<string> = new Set()
-const packedList: Set<string> = new Set()
-const notPackedList: Set<string> = new Set()
-const uninstalledList: Set<string> = new Set()
-const packageVersion: string[] = []
+const packageData = {
+    totalPackages: new Set<string>(),
+    installedPackages: new Set<string>(),
+    notInstalledPackages: new Set<string>(),
+    packedPackages: new Set<string>(),
+    notPackedPackages: new Set<string>(),
+    packageVersion: undefined,
+    logFilePath: undefined,
+};
 
-function createLogFiles(packageName: string): void {
-    const logFolder = `${config.logDir}`
-    const logPath = `${config.logDir}/${packageName}.log`
-    // const packageTreePath = `${config.logDir}/${packageName}/${packageName}.json`
-    if (!fs.existsSync(logPath)) {
-        fs.mkdirSync(logFolder, {recursive: true})
-        fs.writeFileSync(logPath, "")
-        // const jsonFile = `{"${packageName}": "undefine"}`
-        // fs.writeFileSync(packageTreePath, jsonFile)
+function createLogFile(packageName: string): string {
+    const logFolder = `${config.logDir}`;
+    const logFilePath = `${config.logDir}/${packageName}.log`;
+    if (!fs.existsSync(logFilePath)) {
+        fs.mkdirSync(logFolder, { recursive: true });
+        fs.writeFileSync(logFilePath, "");
     }
+    return logFilePath;
 }
 
-function addLog(mainPackage: string, msg: string): void {
-    const logPath = `${config.logDir}/${mainPackage}.log`
+function logMsg(logFilePath: string, msg: string): void {
     const timeStamp = new Date().toISOString();
-    fs.appendFileSync(logPath, timeStamp + '\t' + msg + '\n')
+    fs.appendFileSync(logFilePath, timeStamp + "\t" + msg + "\n");
 }
-
+function logDivider(logFilePath: string): void {
+    fs.appendFileSync(
+        logFilePath,
+        "------------------------------------------------- \n"
+    );
+}
 
 export default {
-    addLog,
-    createLogFiles,
-    dependenciesList,
-    installedList,
-    packedList,
-    notPackedList,
-    uninstalledList,
-    packageVersion
-}
+    logMsg,
+    logDivider,
+    createLogFile,
+    packageData,
+};

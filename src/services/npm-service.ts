@@ -1,140 +1,201 @@
 import { execSync } from "child_process";
 import config from "../../config";
 import * as fs from "fs";
-import * as path from "path";
+import path from "path";
 import logService from "./log-service";
+import zipService from "./zip-service";
+import setupService from "./setup-service";
 
-function installAndPackRecursively(
-    packageName: string,
-    mainPackage?: string
-): void {
-    logService.dependenciesList.add(packageName);
-    installPackage(packageName, mainPackage);
-    const packageDependencies = getDependencies(
-        packageName,
-        mainPackage
-    );
+function installAndPackRecursively(packageName: string): void {
+    logService.packageData.totalPackages.add(packageName);
+    installPackage(packageName);
+    const packageDependencies = getPackageDependencies(packageName);
     for (const dep of packageDependencies) {
-        installAndPackRecursively(dep, mainPackage);
+        installAndPackRecursively(dep);
     }
-    createTarball(packageName, mainPackage);
-    uninstallPackage(packageName, mainPackage);
+    createTarball(packageName);
 }
 
-function installPackage(packageName: string, parentPackage: string): void {
-    logService.addLog(
-        parentPackage,
-        `installing ${packageName}`
-        );
-    const packageDir = config.packagesDir + packageName;
+function installPackage(packageName: string): void {
+    logService.logMsg(
+        logService.packageData.logFilePath,
+        `🔍 getting '${packageName}'`
+    );
+    const packageDir = path.join(config.packagesDir, packageName);
     // check if the package is already installed
     if (fs.existsSync(packageDir)) {
-        logService.addLog(
-            parentPackage,
-            `package ${packageName} already installed.`
+        logService.logMsg(
+            logService.packageData.logFilePath,
+            `✅ package already installed`
         );
     } else {
         // if not exist - install the package
         try {
+            logService.logMsg(
+                logService.packageData.logFilePath,
+                `⬇️ installing ${packageName}`
+            );
             execSync(`npm install ${packageName}`);
-            logService.installedList.add(packageName);
-            logService.addLog(
-                parentPackage,
-                `${packageName} installed`
-                );
+            logService.packageData.installedPackages.add(packageName);
+            logService.logMsg(
+                logService.packageData.logFilePath,
+                `✅ ${packageName} installed`
+            );
         } catch (err) {
-            logService.uninstalledList.add(packageName);
-            logService.addLog(parentPackage, `${err}`);
+            logService.packageData.notInstalledPackages.add(packageName);
+            logService.logMsg(logService.packageData.logFilePath, `❗️ ${err}`);
         }
     }
 }
 
-function getDependencies(packageName: string, parentPackage: string): string[] {
+function getPackageDependencies(packageName: string): string[] {
     try {
-        const packageDir = config.packagesDir + packageName;
+        logService.logMsg(
+            logService.packageData.logFilePath,
+            `🔍 getting dependencies for ${packageName}`
+        );
+        const packageJsonPath = path.join(
+            config.packagesDir,
+            packageName,
+            "package.json"
+        );
         // read package.json of the package
-        const packageJson = JSON.parse(
-            fs.readFileSync(path.join(packageDir, "package.json"), "utf8")
+        const packageJsonData = JSON.parse(
+            fs.readFileSync(packageJsonPath, "utf8")
         );
         // read dependencies of the package
-        const dependencies = Object.keys(packageJson.dependencies || {});
+        const dependencies = Object.keys(packageJsonData.dependencies || {});
         if (dependencies.length > 0) {
-            logService.addLog(
-                parentPackage,
-                `${packageName} dependencies: ${dependencies}`
+            logService.logMsg(
+                logService.packageData.logFilePath,
+                `📋 dependencies: ${dependencies.sort()}`
             );
         } else {
-            logService.addLog(parentPackage, `no dependencies found for ${packageName}`);
+            logService.logMsg(
+                logService.packageData.logFilePath,
+                `no dependencies found`
+            );
         }
         return dependencies;
     } catch (err) {
-        logService.addLog(parentPackage, `${err}`);
+        logService.logMsg(logService.packageData.logFilePath, `${err}`);
     }
 }
 
 function getPackageVersion(packageName: string): string {
-    const packageDir = config.packagesDir + packageName;
-    // read package.json of the package
-    const packageJson = JSON.parse(
-        fs.readFileSync(path.join(packageDir, "package.json"), "utf8")
+    const packageJsonPath = path.join(
+        config.packagesDir,
+        packageName,
+        "package.json"
     );
+    // read package.json of the package
+    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
     // read dependencies of the package
-    const version = packageJson['version']
-    logService.packageVersion.push(version)
-    return version
+    const packageVersion = packageJson["version"];
+    logService.packageData.packageVersion = packageVersion;
+    return packageVersion;
 }
 
-function createTarball(packageName: string, parentPackage: string): void {
+function createTarball(packageName: string): void {
+    const packageVersion = getPackageVersion(packageName)
     // define a path for the tarball file
     const packageDir = config.packagesDir + packageName;
-    const tarballPath = path.resolve(
-        "packages",
-        `${packageName}-${
-            require(`${config.packagesDir + packageName}/package.json`).version
-        }.tgz`
+    const tarballPath = path.join(
+        config.tarballDir,
+        `${packageName}-${packageVersion}.tgz`
     );
     // check if a tarball file is already exist for that package
     if (fs.existsSync(tarballPath)) {
-        logService.addLog(
-            parentPackage,
-            `tarball for ${packageName} already exists.`
+        logService.logMsg(
+            logService.packageData.logFilePath,
+            `✅ ${packageName} tarball already exists`
         );
+        logService.packageData.packedPackages.add(packageName);
     } else {
         try {
-            logService.addLog(parentPackage, `packing ${packageName}`);
+            logService.logMsg(
+                logService.packageData.logFilePath,
+                `📦 packing ${packageName}`
+            );
             // pack the package
             execSync(`npm pack ${packageDir}`, { stdio: "inherit" });
             // move the tarball to its path
             fs.renameSync(
-                `${packageName}-${
-                    require(`${packageDir}/package.json`).version
-                }.tgz`,
+                `${packageName}-${logService.packageData.packageVersion}.tgz`,
                 tarballPath
             );
-            logService.packedList.add(packageName)
+            logService.packageData.packedPackages.add(packageName);
+            logService.logMsg(
+                logService.packageData.logFilePath,
+                `✅ ${packageName} packed`
+            );
         } catch (err) {
-            logService.addLog(parentPackage, `${err}`);
-            logService.notPackedList.add(packageName)
-
+            logService.logMsg(logService.packageData.logFilePath, `❗️ ${err}`);
+            logService.packageData.notPackedPackages.add(packageName);
         }
     }
 }
 
-function uninstallPackage(packageName: string, parentPackage: string): void {
+function deletePackage(packageName: string): void {
     try {
+        logService.logMsg(
+            logService.packageData.logFilePath,
+            `🗑 deleting ${packageName}`
+        );
         // uninstall the package
         execSync(`npm uninstall ${packageName}`);
-        logService.addLog(parentPackage, `${packageName} deleted`);
+        logService.logMsg(
+            logService.packageData.logFilePath,
+            `✅ ${packageName} deleted`
+        );
     } catch (err) {
-        logService.addLog(parentPackage, `${err}`);
+        logService.logMsg(logService.packageData.logFilePath, `❗️ ${err}`);
     }
 }
 
+function npmInstall(mainPackage: string) {
+    setupService.setupDirectories();
+    logService.packageData.logFilePath = logService.createLogFile(mainPackage);
+    logService.logDivider(logService.packageData.logFilePath);
+    logService.packageData.totalPackages.add(mainPackage);
+    logService.logMsg(logService.packageData.logFilePath, "process started");
+    installAndPackRecursively(mainPackage);
+    logService.logDivider(logService.packageData.logFilePath);
+    logService.logMsg(
+        logService.packageData.logFilePath,
+        `total of ${logService.packageData.totalPackages.size} packages: [${[
+            ...logService.packageData.totalPackages,
+        ].sort()}]`
+    );
+    logService.logMsg(
+        logService.packageData.logFilePath,
+        `packed: ${logService.packageData.packedPackages.size} packages: [${[
+            ...logService.packageData.packedPackages,
+        ].sort()}]`
+    );
+    logService.logMsg(
+        logService.packageData.logFilePath,
+        `not packed: ${
+            logService.packageData.notPackedPackages.size
+        } packages: [${[...logService.packageData.notPackedPackages].sort()}]`
+    );
+    logService.logMsg(
+        logService.packageData.logFilePath,
+        `zipping all packages`
+    );
+    logService.logDivider(logService.packageData.logFilePath);
+    zipService.packFolderAsZip(config.tarballDir, mainPackage);
+    logService.packageData.installedPackages.forEach((p) =>
+        deletePackage(p)
+    );
+}
+
 export default {
+    npmInstall,
     installAndPackRecursively,
     installPackage,
-    getDependencies,
+    getPackageDependencies,
     getPackageVersion,
     createTarball,
-    uninstallPackage,
+    deletePackage,
 };

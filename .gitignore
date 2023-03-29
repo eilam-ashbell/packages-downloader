@@ -1,3 +1,4 @@
 /node_modules
-/logs
-/packages
+/src/logs
+/src/packages
+/src/zips
