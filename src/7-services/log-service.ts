@@ -1,4 +1,4 @@
-import config from "../../config";
+import config from "../2-utils/config";
 import * as fs from "fs";
 
 const packageData = {

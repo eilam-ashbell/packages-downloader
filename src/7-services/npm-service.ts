@@ -1,10 +1,11 @@
 import { execSync } from "child_process";
-import config from "../../config";
+import config from "../2-utils/config";
 import * as fs from "fs";
 import path from "path";
 import logService from "./log-service";
 import zipService from "./zip-service";
 import setupService from "./setup-service";
+import safeDelete from "../2-utils/safe-delete";
 
 function installAndPackRecursively(packageName: string): void {
     logService.packageData.totalPackages.add(packageName);
@@ -97,7 +98,7 @@ function getPackageVersion(packageName: string): string {
 }
 
 function createTarball(packageName: string): void {
-    const packageVersion = getPackageVersion(packageName)
+    const packageVersion = getPackageVersion(packageName);
     // define a path for the tarball file
     const packageDir = config.packagesDir + packageName;
     const tarballPath = path.join(
@@ -110,7 +111,9 @@ function createTarball(packageName: string): void {
             logService.packageData.logFilePath,
             `✅ ${packageName} tarball already exists`
         );
-        logService.packageData.packedPackages.add(packageName);
+        logService.packageData.packedPackages.add(
+            `${packageName}-${packageVersion}`
+        );
     } else {
         try {
             logService.logMsg(
@@ -124,7 +127,9 @@ function createTarball(packageName: string): void {
                 `${packageName}-${logService.packageData.packageVersion}.tgz`,
                 tarballPath
             );
-            logService.packageData.packedPackages.add(packageName);
+            logService.packageData.packedPackages.add(
+                `${packageName}-${packageVersion}`
+            );
             logService.logMsg(
                 logService.packageData.logFilePath,
                 `✅ ${packageName} packed`
@@ -153,7 +158,14 @@ function deletePackage(packageName: string): void {
     }
 }
 
-function npmInstall(mainPackage: string) {
+function deleteTarballs(packages: string[]): void {
+    packages.forEach((tarball) => {
+        const tarballPath = path.join(config.tarballDir, tarball + `.tgz`);
+        safeDelete(tarballPath);
+    });
+}
+
+function npmInstall(mainPackage: string): string {
     setupService.setupDirectories();
     logService.packageData.logFilePath = logService.createLogFile(mainPackage);
     logService.logDivider(logService.packageData.logFilePath);
@@ -184,10 +196,10 @@ function npmInstall(mainPackage: string) {
         `zipping all packages`
     );
     logService.logDivider(logService.packageData.logFilePath);
-    zipService.packFolderAsZip(config.tarballDir, mainPackage);
-    logService.packageData.installedPackages.forEach((p) =>
-        deletePackage(p)
-    );
+    const zipPath = zipService.packFolderAsZip(config.tarballDir, mainPackage);
+    logService.packageData.installedPackages.forEach((p) => deletePackage(p));
+    deleteTarballs([...logService.packageData.packedPackages]);
+    return zipPath;
 }
 
 export default {

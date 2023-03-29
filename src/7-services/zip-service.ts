@@ -1,11 +1,10 @@
 import fs from "fs";
 import path from "path";
 import Zip from "node-zip";
-import config from "../../config";
+import config from "../2-utils/config";
 import npmService from "./npm-service";
-import logService from "./log-service";
 
-function packFolderAsZip(folderPath: string, mainPackage: string): void {
+function packFolderAsZip(folderPath: string, mainPackage: string): string {
     const zip = new Zip();
     const packageVersion = npmService.getPackageVersion(mainPackage)
 
@@ -26,6 +25,7 @@ function packFolderAsZip(folderPath: string, mainPackage: string): void {
 
     // Write the zip file data to a file
     fs.writeFileSync(zipPath, zipData);
+    return zipPath
 }
 
 // Recursively add files to the zip object
