@@ -1,0 +1,14 @@
+------------------------------------------------- 
+2023-03-30T08:29:52.252Z	process started
+2023-03-30T08:29:52.254Z	🔍 getting 'random'
+2023-03-30T08:29:52.256Z	✅ package already installed
+2023-03-30T08:29:52.258Z	🔍 getting dependencies for random
+2023-03-30T08:29:52.259Z	📋 dependencies: seedrandom
+2023-03-30T08:29:52.262Z	📦 packing random
+2023-03-30T08:29:54.938Z	✅ random packed
+------------------------------------------------- 
+2023-03-30T08:29:54.938Z	total of 1 packages: [random]
+2023-03-30T08:29:54.943Z	packed: 1 packages: [random-4.1.0]
+2023-03-30T08:29:54.944Z	not packed: 0 packages: []
+2023-03-30T08:29:54.944Z	zipping all packages
+------------------------------------------------- 
