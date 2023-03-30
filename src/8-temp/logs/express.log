@@ -1,0 +1,880 @@
+------------------------------------------------- 
+2023-03-30T08:43:55.580Z	process started
+2023-03-30T08:43:55.580Z	🔍 getting 'express'
+2023-03-30T08:43:55.581Z	✅ package already installed
+2023-03-30T08:43:55.581Z	🔍 getting dependencies for express
+2023-03-30T08:43:55.582Z	📋 dependencies: accepts,array-flatten,body-parser,content-disposition,content-type,cookie,cookie-signature,debug,depd,encodeurl,escape-html,etag,finalhandler,fresh,http-errors,merge-descriptors,methods,on-finished,parseurl,path-to-regexp,proxy-addr,qs,range-parser,safe-buffer,send,serve-static,setprototypeof,statuses,type-is,utils-merge,vary
+2023-03-30T08:43:55.583Z	🔍 getting 'accepts'
+2023-03-30T08:43:55.584Z	✅ package already installed
+2023-03-30T08:43:55.584Z	🔍 getting dependencies for accepts
+2023-03-30T08:43:55.585Z	📋 dependencies: mime-types,negotiator
+2023-03-30T08:43:55.585Z	🔍 getting 'mime-types'
+2023-03-30T08:43:55.586Z	✅ package already installed
+2023-03-30T08:43:55.586Z	🔍 getting dependencies for mime-types
+2023-03-30T08:43:55.587Z	📋 dependencies: mime-db
+2023-03-30T08:43:55.588Z	🔍 getting 'mime-db'
+2023-03-30T08:43:55.588Z	✅ package already installed
+2023-03-30T08:43:55.588Z	🔍 getting dependencies for mime-db
+2023-03-30T08:43:55.589Z	no dependencies found
+2023-03-30T08:43:55.590Z	📦 packing mime-db
+2023-03-30T08:43:57.611Z	✅ mime-db packed
+2023-03-30T08:43:57.612Z	📦 packing mime-types
+2023-03-30T08:43:59.585Z	✅ mime-types packed
+2023-03-30T08:43:59.586Z	🔍 getting 'negotiator'
+2023-03-30T08:43:59.587Z	✅ package already installed
+2023-03-30T08:43:59.587Z	🔍 getting dependencies for negotiator
+2023-03-30T08:43:59.588Z	no dependencies found
+2023-03-30T08:43:59.590Z	📦 packing negotiator
+2023-03-30T08:44:02.920Z	✅ negotiator packed
+2023-03-30T08:44:02.922Z	📦 packing accepts
+2023-03-30T08:44:05.352Z	✅ accepts packed
+2023-03-30T08:44:05.353Z	🔍 getting 'array-flatten'
+2023-03-30T08:44:05.353Z	✅ package already installed
+2023-03-30T08:44:05.354Z	🔍 getting dependencies for array-flatten
+2023-03-30T08:44:05.354Z	no dependencies found
+2023-03-30T08:44:05.355Z	📦 packing array-flatten
+2023-03-30T08:44:07.414Z	✅ array-flatten packed
+2023-03-30T08:44:07.414Z	🔍 getting 'body-parser'
+2023-03-30T08:44:07.415Z	✅ package already installed
+2023-03-30T08:44:07.415Z	🔍 getting dependencies for body-parser
+2023-03-30T08:44:07.417Z	📋 dependencies: bytes,content-type,debug,depd,destroy,http-errors,iconv-lite,on-finished,qs,raw-body,type-is,unpipe
+2023-03-30T08:44:07.417Z	🔍 getting 'bytes'
+2023-03-30T08:44:07.418Z	✅ package already installed
+2023-03-30T08:44:07.418Z	🔍 getting dependencies for bytes
+2023-03-30T08:44:07.419Z	no dependencies found
+2023-03-30T08:44:07.420Z	📦 packing bytes
+2023-03-30T08:44:09.578Z	✅ bytes packed
+2023-03-30T08:44:09.579Z	🔍 getting 'content-type'
+2023-03-30T08:44:09.581Z	✅ package already installed
+2023-03-30T08:44:09.582Z	🔍 getting dependencies for content-type
+2023-03-30T08:44:09.585Z	no dependencies found
+2023-03-30T08:44:09.586Z	📦 packing content-type
+2023-03-30T08:44:11.540Z	✅ content-type packed
+2023-03-30T08:44:11.540Z	🔍 getting 'debug'
+2023-03-30T08:44:11.541Z	✅ package already installed
+2023-03-30T08:44:11.542Z	🔍 getting dependencies for debug
+2023-03-30T08:44:11.543Z	📋 dependencies: ms
+2023-03-30T08:44:11.543Z	🔍 getting 'ms'
+2023-03-30T08:44:11.544Z	✅ package already installed
+2023-03-30T08:44:11.544Z	🔍 getting dependencies for ms
+2023-03-30T08:44:11.545Z	no dependencies found
+2023-03-30T08:44:11.546Z	📦 packing ms
+2023-03-30T08:44:13.604Z	✅ ms packed
+2023-03-30T08:44:13.605Z	📦 packing debug
+2023-03-30T08:44:16.675Z	✅ debug packed
+2023-03-30T08:44:16.676Z	🔍 getting 'depd'
+2023-03-30T08:44:16.676Z	✅ package already installed
+2023-03-30T08:44:16.678Z	🔍 getting dependencies for depd
+2023-03-30T08:44:16.679Z	no dependencies found
+2023-03-30T08:44:16.680Z	📦 packing depd
+2023-03-30T08:44:19.736Z	✅ depd packed
+2023-03-30T08:44:19.737Z	🔍 getting 'destroy'
+2023-03-30T08:44:19.738Z	✅ package already installed
+2023-03-30T08:44:19.739Z	🔍 getting dependencies for destroy
+2023-03-30T08:44:19.740Z	no dependencies found
+2023-03-30T08:44:19.741Z	📦 packing destroy
+2023-03-30T08:44:23.105Z	✅ destroy packed
+2023-03-30T08:44:23.106Z	🔍 getting 'http-errors'
+2023-03-30T08:44:23.106Z	✅ package already installed
+2023-03-30T08:44:23.107Z	🔍 getting dependencies for http-errors
+2023-03-30T08:44:23.108Z	📋 dependencies: depd,inherits,setprototypeof,statuses,toidentifier
+2023-03-30T08:44:23.109Z	🔍 getting 'depd'
+2023-03-30T08:44:23.109Z	✅ package already installed
+2023-03-30T08:44:23.110Z	🔍 getting dependencies for depd
+2023-03-30T08:44:23.111Z	no dependencies found
+2023-03-30T08:44:23.113Z	✅ depd tarball already exists
+2023-03-30T08:44:23.113Z	🔍 getting 'inherits'
+2023-03-30T08:44:23.114Z	✅ package already installed
+2023-03-30T08:44:23.115Z	🔍 getting dependencies for inherits
+2023-03-30T08:44:23.117Z	no dependencies found
+2023-03-30T08:44:23.118Z	📦 packing inherits
+2023-03-30T08:44:26.385Z	✅ inherits packed
+2023-03-30T08:44:26.386Z	🔍 getting 'setprototypeof'
+2023-03-30T08:44:26.386Z	✅ package already installed
+2023-03-30T08:44:26.387Z	🔍 getting dependencies for setprototypeof
+2023-03-30T08:44:26.387Z	no dependencies found
+2023-03-30T08:44:26.388Z	📦 packing setprototypeof
+2023-03-30T08:44:28.538Z	✅ setprototypeof packed
+2023-03-30T08:44:28.538Z	🔍 getting 'statuses'
+2023-03-30T08:44:28.539Z	✅ package already installed
+2023-03-30T08:44:28.539Z	🔍 getting dependencies for statuses
+2023-03-30T08:44:28.540Z	no dependencies found
+2023-03-30T08:44:28.541Z	📦 packing statuses
+2023-03-30T08:44:30.581Z	✅ statuses packed
+2023-03-30T08:44:30.583Z	🔍 getting 'toidentifier'
+2023-03-30T08:44:30.583Z	✅ package already installed
+2023-03-30T08:44:30.584Z	🔍 getting dependencies for toidentifier
+2023-03-30T08:44:30.585Z	no dependencies found
+2023-03-30T08:44:30.585Z	📦 packing toidentifier
+2023-03-30T08:44:32.561Z	✅ toidentifier packed
+2023-03-30T08:44:32.562Z	📦 packing http-errors
+2023-03-30T08:44:34.493Z	✅ http-errors packed
+2023-03-30T08:44:34.493Z	🔍 getting 'iconv-lite'
+2023-03-30T08:44:34.494Z	✅ package already installed
+2023-03-30T08:44:34.494Z	🔍 getting dependencies for iconv-lite
+2023-03-30T08:44:34.495Z	📋 dependencies: safer-buffer
+2023-03-30T08:44:34.495Z	🔍 getting 'safer-buffer'
+2023-03-30T08:44:34.495Z	✅ package already installed
+2023-03-30T08:44:34.495Z	🔍 getting dependencies for safer-buffer
+2023-03-30T08:44:34.496Z	no dependencies found
+2023-03-30T08:44:34.496Z	📦 packing safer-buffer
+2023-03-30T08:44:36.446Z	✅ safer-buffer packed
+2023-03-30T08:44:36.447Z	📦 packing iconv-lite
+2023-03-30T08:44:38.516Z	✅ iconv-lite packed
+2023-03-30T08:44:38.517Z	🔍 getting 'on-finished'
+2023-03-30T08:44:38.518Z	✅ package already installed
+2023-03-30T08:44:38.518Z	🔍 getting dependencies for on-finished
+2023-03-30T08:44:38.519Z	📋 dependencies: ee-first
+2023-03-30T08:44:38.519Z	🔍 getting 'ee-first'
+2023-03-30T08:44:38.520Z	✅ package already installed
+2023-03-30T08:44:38.520Z	🔍 getting dependencies for ee-first
+2023-03-30T08:44:38.520Z	no dependencies found
+2023-03-30T08:44:38.521Z	📦 packing ee-first
+2023-03-30T08:44:40.455Z	✅ ee-first packed
+2023-03-30T08:44:40.456Z	📦 packing on-finished
+2023-03-30T08:44:42.393Z	✅ on-finished packed
+2023-03-30T08:44:42.394Z	🔍 getting 'qs'
+2023-03-30T08:44:42.395Z	✅ package already installed
+2023-03-30T08:44:42.396Z	🔍 getting dependencies for qs
+2023-03-30T08:44:42.397Z	📋 dependencies: side-channel
+2023-03-30T08:44:42.397Z	🔍 getting 'side-channel'
+2023-03-30T08:44:42.398Z	✅ package already installed
+2023-03-30T08:44:42.398Z	🔍 getting dependencies for side-channel
+2023-03-30T08:44:42.401Z	📋 dependencies: call-bind,get-intrinsic,object-inspect
+2023-03-30T08:44:42.401Z	🔍 getting 'call-bind'
+2023-03-30T08:44:42.402Z	✅ package already installed
+2023-03-30T08:44:42.402Z	🔍 getting dependencies for call-bind
+2023-03-30T08:44:42.403Z	📋 dependencies: function-bind,get-intrinsic
+2023-03-30T08:44:42.403Z	🔍 getting 'function-bind'
+2023-03-30T08:44:42.404Z	✅ package already installed
+2023-03-30T08:44:42.404Z	🔍 getting dependencies for function-bind
+2023-03-30T08:44:42.406Z	no dependencies found
+2023-03-30T08:44:42.406Z	📦 packing function-bind
+2023-03-30T08:44:44.365Z	✅ function-bind packed
+2023-03-30T08:44:44.366Z	🔍 getting 'get-intrinsic'
+2023-03-30T08:44:44.367Z	✅ package already installed
+2023-03-30T08:44:44.369Z	🔍 getting dependencies for get-intrinsic
+2023-03-30T08:44:44.370Z	📋 dependencies: function-bind,has,has-symbols
+2023-03-30T08:44:44.370Z	🔍 getting 'function-bind'
+2023-03-30T08:44:44.371Z	✅ package already installed
+2023-03-30T08:44:44.371Z	🔍 getting dependencies for function-bind
+2023-03-30T08:44:44.371Z	no dependencies found
+2023-03-30T08:44:44.372Z	✅ function-bind tarball already exists
+2023-03-30T08:44:44.372Z	🔍 getting 'has'
+2023-03-30T08:44:44.372Z	✅ package already installed
+2023-03-30T08:44:44.373Z	🔍 getting dependencies for has
+2023-03-30T08:44:44.373Z	📋 dependencies: function-bind
+2023-03-30T08:44:44.373Z	🔍 getting 'function-bind'
+2023-03-30T08:44:44.374Z	✅ package already installed
+2023-03-30T08:44:44.374Z	🔍 getting dependencies for function-bind
+2023-03-30T08:44:44.374Z	no dependencies found
+2023-03-30T08:44:44.375Z	✅ function-bind tarball already exists
+2023-03-30T08:44:44.375Z	📦 packing has
+2023-03-30T08:44:46.435Z	✅ has packed
+2023-03-30T08:44:46.436Z	🔍 getting 'has-symbols'
+2023-03-30T08:44:46.436Z	✅ package already installed
+2023-03-30T08:44:46.437Z	🔍 getting dependencies for has-symbols
+2023-03-30T08:44:46.437Z	no dependencies found
+2023-03-30T08:44:46.438Z	📦 packing has-symbols
+2023-03-30T08:44:48.413Z	✅ has-symbols packed
+2023-03-30T08:44:48.413Z	📦 packing get-intrinsic
+2023-03-30T08:44:50.344Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/get-intrinsic
+2023-03-30T08:44:50.345Z	📦 packing call-bind
+2023-03-30T08:44:52.273Z	✅ call-bind packed
+2023-03-30T08:44:52.274Z	🔍 getting 'get-intrinsic'
+2023-03-30T08:44:52.275Z	✅ package already installed
+2023-03-30T08:44:52.275Z	🔍 getting dependencies for get-intrinsic
+2023-03-30T08:44:52.277Z	📋 dependencies: function-bind,has,has-symbols
+2023-03-30T08:44:52.278Z	🔍 getting 'function-bind'
+2023-03-30T08:44:52.278Z	✅ package already installed
+2023-03-30T08:44:52.278Z	🔍 getting dependencies for function-bind
+2023-03-30T08:44:52.279Z	no dependencies found
+2023-03-30T08:44:52.280Z	✅ function-bind tarball already exists
+2023-03-30T08:44:52.280Z	🔍 getting 'has'
+2023-03-30T08:44:52.280Z	✅ package already installed
+2023-03-30T08:44:52.280Z	🔍 getting dependencies for has
+2023-03-30T08:44:52.281Z	📋 dependencies: function-bind
+2023-03-30T08:44:52.281Z	🔍 getting 'function-bind'
+2023-03-30T08:44:52.281Z	✅ package already installed
+2023-03-30T08:44:52.282Z	🔍 getting dependencies for function-bind
+2023-03-30T08:44:52.282Z	no dependencies found
+2023-03-30T08:44:52.283Z	✅ function-bind tarball already exists
+2023-03-30T08:44:52.283Z	✅ has tarball already exists
+2023-03-30T08:44:52.284Z	🔍 getting 'has-symbols'
+2023-03-30T08:44:52.284Z	✅ package already installed
+2023-03-30T08:44:52.285Z	🔍 getting dependencies for has-symbols
+2023-03-30T08:44:52.285Z	no dependencies found
+2023-03-30T08:44:52.286Z	✅ has-symbols tarball already exists
+2023-03-30T08:44:52.288Z	📦 packing get-intrinsic
+2023-03-30T08:44:54.170Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/get-intrinsic
+2023-03-30T08:44:54.170Z	🔍 getting 'object-inspect'
+2023-03-30T08:44:54.171Z	✅ package already installed
+2023-03-30T08:44:54.171Z	🔍 getting dependencies for object-inspect
+2023-03-30T08:44:54.173Z	no dependencies found
+2023-03-30T08:44:54.175Z	📦 packing object-inspect
+2023-03-30T08:44:56.033Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/object-inspect
+2023-03-30T08:44:56.034Z	📦 packing side-channel
+2023-03-30T08:44:57.994Z	✅ side-channel packed
+2023-03-30T08:44:57.995Z	📦 packing qs
+2023-03-30T08:44:59.889Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/qs
+2023-03-30T08:44:59.890Z	🔍 getting 'raw-body'
+2023-03-30T08:44:59.890Z	✅ package already installed
+2023-03-30T08:44:59.891Z	🔍 getting dependencies for raw-body
+2023-03-30T08:44:59.891Z	📋 dependencies: bytes,http-errors,iconv-lite,unpipe
+2023-03-30T08:44:59.892Z	🔍 getting 'bytes'
+2023-03-30T08:44:59.892Z	✅ package already installed
+2023-03-30T08:44:59.892Z	🔍 getting dependencies for bytes
+2023-03-30T08:44:59.893Z	no dependencies found
+2023-03-30T08:44:59.895Z	✅ bytes tarball already exists
+2023-03-30T08:44:59.896Z	🔍 getting 'http-errors'
+2023-03-30T08:44:59.896Z	✅ package already installed
+2023-03-30T08:44:59.897Z	🔍 getting dependencies for http-errors
+2023-03-30T08:44:59.897Z	📋 dependencies: depd,inherits,setprototypeof,statuses,toidentifier
+2023-03-30T08:44:59.898Z	🔍 getting 'depd'
+2023-03-30T08:44:59.898Z	✅ package already installed
+2023-03-30T08:44:59.899Z	🔍 getting dependencies for depd
+2023-03-30T08:44:59.901Z	no dependencies found
+2023-03-30T08:44:59.903Z	✅ depd tarball already exists
+2023-03-30T08:44:59.903Z	🔍 getting 'inherits'
+2023-03-30T08:44:59.903Z	✅ package already installed
+2023-03-30T08:44:59.904Z	🔍 getting dependencies for inherits
+2023-03-30T08:44:59.904Z	no dependencies found
+2023-03-30T08:44:59.905Z	✅ inherits tarball already exists
+2023-03-30T08:44:59.905Z	🔍 getting 'setprototypeof'
+2023-03-30T08:44:59.905Z	✅ package already installed
+2023-03-30T08:44:59.905Z	🔍 getting dependencies for setprototypeof
+2023-03-30T08:44:59.906Z	no dependencies found
+2023-03-30T08:44:59.906Z	✅ setprototypeof tarball already exists
+2023-03-30T08:44:59.907Z	🔍 getting 'statuses'
+2023-03-30T08:44:59.907Z	✅ package already installed
+2023-03-30T08:44:59.907Z	🔍 getting dependencies for statuses
+2023-03-30T08:44:59.908Z	no dependencies found
+2023-03-30T08:44:59.908Z	✅ statuses tarball already exists
+2023-03-30T08:44:59.908Z	🔍 getting 'toidentifier'
+2023-03-30T08:44:59.909Z	✅ package already installed
+2023-03-30T08:44:59.909Z	🔍 getting dependencies for toidentifier
+2023-03-30T08:44:59.909Z	no dependencies found
+2023-03-30T08:44:59.910Z	✅ toidentifier tarball already exists
+2023-03-30T08:44:59.911Z	✅ http-errors tarball already exists
+2023-03-30T08:44:59.911Z	🔍 getting 'iconv-lite'
+2023-03-30T08:44:59.912Z	✅ package already installed
+2023-03-30T08:44:59.912Z	🔍 getting dependencies for iconv-lite
+2023-03-30T08:44:59.913Z	📋 dependencies: safer-buffer
+2023-03-30T08:44:59.913Z	🔍 getting 'safer-buffer'
+2023-03-30T08:44:59.914Z	✅ package already installed
+2023-03-30T08:44:59.914Z	🔍 getting dependencies for safer-buffer
+2023-03-30T08:44:59.914Z	no dependencies found
+2023-03-30T08:44:59.915Z	✅ safer-buffer tarball already exists
+2023-03-30T08:44:59.915Z	✅ iconv-lite tarball already exists
+2023-03-30T08:44:59.916Z	🔍 getting 'unpipe'
+2023-03-30T08:44:59.916Z	✅ package already installed
+2023-03-30T08:44:59.916Z	🔍 getting dependencies for unpipe
+2023-03-30T08:44:59.917Z	no dependencies found
+2023-03-30T08:44:59.917Z	📦 packing unpipe
+2023-03-30T08:45:02.005Z	✅ unpipe packed
+2023-03-30T08:45:02.006Z	📦 packing raw-body
+2023-03-30T08:45:04.277Z	✅ raw-body packed
+2023-03-30T08:45:04.278Z	🔍 getting 'type-is'
+2023-03-30T08:45:04.278Z	✅ package already installed
+2023-03-30T08:45:04.279Z	🔍 getting dependencies for type-is
+2023-03-30T08:45:04.280Z	📋 dependencies: media-typer,mime-types
+2023-03-30T08:45:04.280Z	🔍 getting 'media-typer'
+2023-03-30T08:45:04.281Z	✅ package already installed
+2023-03-30T08:45:04.281Z	🔍 getting dependencies for media-typer
+2023-03-30T08:45:04.281Z	no dependencies found
+2023-03-30T08:45:04.284Z	📦 packing media-typer
+2023-03-30T08:45:06.449Z	✅ media-typer packed
+2023-03-30T08:45:06.450Z	🔍 getting 'mime-types'
+2023-03-30T08:45:06.450Z	✅ package already installed
+2023-03-30T08:45:06.450Z	🔍 getting dependencies for mime-types
+2023-03-30T08:45:06.457Z	📋 dependencies: mime-db
+2023-03-30T08:45:06.459Z	🔍 getting 'mime-db'
+2023-03-30T08:45:06.460Z	✅ package already installed
+2023-03-30T08:45:06.460Z	🔍 getting dependencies for mime-db
+2023-03-30T08:45:06.461Z	no dependencies found
+2023-03-30T08:45:06.461Z	✅ mime-db tarball already exists
+2023-03-30T08:45:06.462Z	✅ mime-types tarball already exists
+2023-03-30T08:45:06.463Z	📦 packing type-is
+2023-03-30T08:45:08.501Z	✅ type-is packed
+2023-03-30T08:45:08.502Z	🔍 getting 'unpipe'
+2023-03-30T08:45:08.502Z	✅ package already installed
+2023-03-30T08:45:08.504Z	🔍 getting dependencies for unpipe
+2023-03-30T08:45:08.505Z	no dependencies found
+2023-03-30T08:45:08.506Z	✅ unpipe tarball already exists
+2023-03-30T08:45:08.507Z	📦 packing body-parser
+2023-03-30T08:45:10.582Z	✅ body-parser packed
+2023-03-30T08:45:10.582Z	🔍 getting 'content-disposition'
+2023-03-30T08:45:10.583Z	✅ package already installed
+2023-03-30T08:45:10.583Z	🔍 getting dependencies for content-disposition
+2023-03-30T08:45:10.584Z	📋 dependencies: safe-buffer
+2023-03-30T08:45:10.584Z	🔍 getting 'safe-buffer'
+2023-03-30T08:45:10.584Z	✅ package already installed
+2023-03-30T08:45:10.585Z	🔍 getting dependencies for safe-buffer
+2023-03-30T08:45:10.585Z	no dependencies found
+2023-03-30T08:45:10.586Z	📦 packing safe-buffer
+2023-03-30T08:45:12.587Z	✅ safe-buffer packed
+2023-03-30T08:45:12.588Z	📦 packing content-disposition
+2023-03-30T08:45:14.703Z	✅ content-disposition packed
+2023-03-30T08:45:14.703Z	🔍 getting 'content-type'
+2023-03-30T08:45:14.704Z	✅ package already installed
+2023-03-30T08:45:14.704Z	🔍 getting dependencies for content-type
+2023-03-30T08:45:14.704Z	no dependencies found
+2023-03-30T08:45:14.705Z	✅ content-type tarball already exists
+2023-03-30T08:45:14.705Z	🔍 getting 'cookie'
+2023-03-30T08:45:14.706Z	✅ package already installed
+2023-03-30T08:45:14.706Z	🔍 getting dependencies for cookie
+2023-03-30T08:45:14.707Z	no dependencies found
+2023-03-30T08:45:14.707Z	📦 packing cookie
+2023-03-30T08:45:16.679Z	✅ cookie packed
+2023-03-30T08:45:16.679Z	🔍 getting 'cookie-signature'
+2023-03-30T08:45:16.680Z	✅ package already installed
+2023-03-30T08:45:16.680Z	🔍 getting dependencies for cookie-signature
+2023-03-30T08:45:16.681Z	no dependencies found
+2023-03-30T08:45:16.682Z	📦 packing cookie-signature
+2023-03-30T08:45:18.677Z	✅ cookie-signature packed
+2023-03-30T08:45:18.678Z	🔍 getting 'debug'
+2023-03-30T08:45:18.678Z	✅ package already installed
+2023-03-30T08:45:18.678Z	🔍 getting dependencies for debug
+2023-03-30T08:45:18.679Z	📋 dependencies: ms
+2023-03-30T08:45:18.679Z	🔍 getting 'ms'
+2023-03-30T08:45:18.680Z	✅ package already installed
+2023-03-30T08:45:18.681Z	🔍 getting dependencies for ms
+2023-03-30T08:45:18.681Z	no dependencies found
+2023-03-30T08:45:18.682Z	✅ ms tarball already exists
+2023-03-30T08:45:18.684Z	✅ debug tarball already exists
+2023-03-30T08:45:18.684Z	🔍 getting 'depd'
+2023-03-30T08:45:18.687Z	✅ package already installed
+2023-03-30T08:45:18.687Z	🔍 getting dependencies for depd
+2023-03-30T08:45:18.688Z	no dependencies found
+2023-03-30T08:45:18.688Z	✅ depd tarball already exists
+2023-03-30T08:45:18.689Z	🔍 getting 'encodeurl'
+2023-03-30T08:45:18.689Z	✅ package already installed
+2023-03-30T08:45:18.689Z	🔍 getting dependencies for encodeurl
+2023-03-30T08:45:18.690Z	no dependencies found
+2023-03-30T08:45:18.691Z	📦 packing encodeurl
+2023-03-30T08:45:20.620Z	✅ encodeurl packed
+2023-03-30T08:45:20.621Z	🔍 getting 'escape-html'
+2023-03-30T08:45:20.621Z	✅ package already installed
+2023-03-30T08:45:20.622Z	🔍 getting dependencies for escape-html
+2023-03-30T08:45:20.624Z	no dependencies found
+2023-03-30T08:45:20.624Z	📦 packing escape-html
+2023-03-30T08:45:22.575Z	✅ escape-html packed
+2023-03-30T08:45:22.576Z	🔍 getting 'etag'
+2023-03-30T08:45:22.576Z	✅ package already installed
+2023-03-30T08:45:22.577Z	🔍 getting dependencies for etag
+2023-03-30T08:45:22.577Z	no dependencies found
+2023-03-30T08:45:22.578Z	📦 packing etag
+2023-03-30T08:45:24.520Z	✅ etag packed
+2023-03-30T08:45:24.521Z	🔍 getting 'finalhandler'
+2023-03-30T08:45:24.522Z	✅ package already installed
+2023-03-30T08:45:24.522Z	🔍 getting dependencies for finalhandler
+2023-03-30T08:45:24.524Z	📋 dependencies: debug,encodeurl,escape-html,on-finished,parseurl,statuses,unpipe
+2023-03-30T08:45:24.525Z	🔍 getting 'debug'
+2023-03-30T08:45:24.526Z	✅ package already installed
+2023-03-30T08:45:24.526Z	🔍 getting dependencies for debug
+2023-03-30T08:45:24.526Z	📋 dependencies: ms
+2023-03-30T08:45:24.527Z	🔍 getting 'ms'
+2023-03-30T08:45:24.527Z	✅ package already installed
+2023-03-30T08:45:24.527Z	🔍 getting dependencies for ms
+2023-03-30T08:45:24.528Z	no dependencies found
+2023-03-30T08:45:24.528Z	✅ ms tarball already exists
+2023-03-30T08:45:24.529Z	✅ debug tarball already exists
+2023-03-30T08:45:24.529Z	🔍 getting 'encodeurl'
+2023-03-30T08:45:24.529Z	✅ package already installed
+2023-03-30T08:45:24.529Z	🔍 getting dependencies for encodeurl
+2023-03-30T08:45:24.530Z	no dependencies found
+2023-03-30T08:45:24.531Z	✅ encodeurl tarball already exists
+2023-03-30T08:45:24.531Z	🔍 getting 'escape-html'
+2023-03-30T08:45:24.531Z	✅ package already installed
+2023-03-30T08:45:24.531Z	🔍 getting dependencies for escape-html
+2023-03-30T08:45:24.532Z	no dependencies found
+2023-03-30T08:45:24.533Z	✅ escape-html tarball already exists
+2023-03-30T08:45:24.533Z	🔍 getting 'on-finished'
+2023-03-30T08:45:24.534Z	✅ package already installed
+2023-03-30T08:45:24.534Z	🔍 getting dependencies for on-finished
+2023-03-30T08:45:24.535Z	📋 dependencies: ee-first
+2023-03-30T08:45:24.537Z	🔍 getting 'ee-first'
+2023-03-30T08:45:24.537Z	✅ package already installed
+2023-03-30T08:45:24.538Z	🔍 getting dependencies for ee-first
+2023-03-30T08:45:24.538Z	no dependencies found
+2023-03-30T08:45:24.539Z	✅ ee-first tarball already exists
+2023-03-30T08:45:24.539Z	✅ on-finished tarball already exists
+2023-03-30T08:45:24.540Z	🔍 getting 'parseurl'
+2023-03-30T08:45:24.540Z	✅ package already installed
+2023-03-30T08:45:24.540Z	🔍 getting dependencies for parseurl
+2023-03-30T08:45:24.541Z	no dependencies found
+2023-03-30T08:45:24.541Z	📦 packing parseurl
+2023-03-30T08:45:26.775Z	✅ parseurl packed
+2023-03-30T08:45:26.776Z	🔍 getting 'statuses'
+2023-03-30T08:45:26.776Z	✅ package already installed
+2023-03-30T08:45:26.776Z	🔍 getting dependencies for statuses
+2023-03-30T08:45:26.777Z	no dependencies found
+2023-03-30T08:45:26.778Z	✅ statuses tarball already exists
+2023-03-30T08:45:26.778Z	🔍 getting 'unpipe'
+2023-03-30T08:45:26.779Z	✅ package already installed
+2023-03-30T08:45:26.779Z	🔍 getting dependencies for unpipe
+2023-03-30T08:45:26.779Z	no dependencies found
+2023-03-30T08:45:26.780Z	✅ unpipe tarball already exists
+2023-03-30T08:45:26.781Z	📦 packing finalhandler
+2023-03-30T08:45:29.146Z	✅ finalhandler packed
+2023-03-30T08:45:29.146Z	🔍 getting 'fresh'
+2023-03-30T08:45:29.147Z	✅ package already installed
+2023-03-30T08:45:29.148Z	🔍 getting dependencies for fresh
+2023-03-30T08:45:29.152Z	no dependencies found
+2023-03-30T08:45:29.153Z	📦 packing fresh
+2023-03-30T08:45:31.350Z	✅ fresh packed
+2023-03-30T08:45:31.351Z	🔍 getting 'http-errors'
+2023-03-30T08:45:31.351Z	✅ package already installed
+2023-03-30T08:45:31.351Z	🔍 getting dependencies for http-errors
+2023-03-30T08:45:31.352Z	📋 dependencies: depd,inherits,setprototypeof,statuses,toidentifier
+2023-03-30T08:45:31.352Z	🔍 getting 'depd'
+2023-03-30T08:45:31.353Z	✅ package already installed
+2023-03-30T08:45:31.353Z	🔍 getting dependencies for depd
+2023-03-30T08:45:31.354Z	no dependencies found
+2023-03-30T08:45:31.354Z	✅ depd tarball already exists
+2023-03-30T08:45:31.354Z	🔍 getting 'inherits'
+2023-03-30T08:45:31.355Z	✅ package already installed
+2023-03-30T08:45:31.355Z	🔍 getting dependencies for inherits
+2023-03-30T08:45:31.356Z	no dependencies found
+2023-03-30T08:45:31.356Z	✅ inherits tarball already exists
+2023-03-30T08:45:31.357Z	🔍 getting 'setprototypeof'
+2023-03-30T08:45:31.357Z	✅ package already installed
+2023-03-30T08:45:31.357Z	🔍 getting dependencies for setprototypeof
+2023-03-30T08:45:31.358Z	no dependencies found
+2023-03-30T08:45:31.359Z	✅ setprototypeof tarball already exists
+2023-03-30T08:45:31.359Z	🔍 getting 'statuses'
+2023-03-30T08:45:31.360Z	✅ package already installed
+2023-03-30T08:45:31.360Z	🔍 getting dependencies for statuses
+2023-03-30T08:45:31.362Z	no dependencies found
+2023-03-30T08:45:31.363Z	✅ statuses tarball already exists
+2023-03-30T08:45:31.363Z	🔍 getting 'toidentifier'
+2023-03-30T08:45:31.364Z	✅ package already installed
+2023-03-30T08:45:31.364Z	🔍 getting dependencies for toidentifier
+2023-03-30T08:45:31.365Z	no dependencies found
+2023-03-30T08:45:31.366Z	✅ toidentifier tarball already exists
+2023-03-30T08:45:31.367Z	✅ http-errors tarball already exists
+2023-03-30T08:45:31.368Z	🔍 getting 'merge-descriptors'
+2023-03-30T08:45:31.368Z	✅ package already installed
+2023-03-30T08:45:31.369Z	🔍 getting dependencies for merge-descriptors
+2023-03-30T08:45:31.369Z	no dependencies found
+2023-03-30T08:45:31.370Z	📦 packing merge-descriptors
+2023-03-30T08:45:33.362Z	✅ merge-descriptors packed
+2023-03-30T08:45:33.362Z	🔍 getting 'methods'
+2023-03-30T08:45:33.363Z	✅ package already installed
+2023-03-30T08:45:33.363Z	🔍 getting dependencies for methods
+2023-03-30T08:45:33.364Z	no dependencies found
+2023-03-30T08:45:33.365Z	📦 packing methods
+2023-03-30T08:45:35.451Z	✅ methods packed
+2023-03-30T08:45:35.452Z	🔍 getting 'on-finished'
+2023-03-30T08:45:35.454Z	✅ package already installed
+2023-03-30T08:45:35.455Z	🔍 getting dependencies for on-finished
+2023-03-30T08:45:35.455Z	📋 dependencies: ee-first
+2023-03-30T08:45:35.456Z	🔍 getting 'ee-first'
+2023-03-30T08:45:35.456Z	✅ package already installed
+2023-03-30T08:45:35.456Z	🔍 getting dependencies for ee-first
+2023-03-30T08:45:35.456Z	no dependencies found
+2023-03-30T08:45:35.457Z	✅ ee-first tarball already exists
+2023-03-30T08:45:35.458Z	✅ on-finished tarball already exists
+2023-03-30T08:45:35.458Z	🔍 getting 'parseurl'
+2023-03-30T08:45:35.458Z	✅ package already installed
+2023-03-30T08:45:35.458Z	🔍 getting dependencies for parseurl
+2023-03-30T08:45:35.459Z	no dependencies found
+2023-03-30T08:45:35.459Z	✅ parseurl tarball already exists
+2023-03-30T08:45:35.460Z	🔍 getting 'path-to-regexp'
+2023-03-30T08:45:35.460Z	✅ package already installed
+2023-03-30T08:45:35.460Z	🔍 getting dependencies for path-to-regexp
+2023-03-30T08:45:35.461Z	no dependencies found
+2023-03-30T08:45:35.461Z	📦 packing path-to-regexp
+2023-03-30T08:45:37.431Z	✅ path-to-regexp packed
+2023-03-30T08:45:37.431Z	🔍 getting 'proxy-addr'
+2023-03-30T08:45:37.431Z	✅ package already installed
+2023-03-30T08:45:37.432Z	🔍 getting dependencies for proxy-addr
+2023-03-30T08:45:37.435Z	📋 dependencies: forwarded,ipaddr.js
+2023-03-30T08:45:37.435Z	🔍 getting 'forwarded'
+2023-03-30T08:45:37.436Z	✅ package already installed
+2023-03-30T08:45:37.436Z	🔍 getting dependencies for forwarded
+2023-03-30T08:45:37.438Z	no dependencies found
+2023-03-30T08:45:37.438Z	📦 packing forwarded
+2023-03-30T08:45:39.363Z	✅ forwarded packed
+2023-03-30T08:45:39.364Z	🔍 getting 'ipaddr.js'
+2023-03-30T08:45:39.364Z	✅ package already installed
+2023-03-30T08:45:39.365Z	🔍 getting dependencies for ipaddr.js
+2023-03-30T08:45:39.365Z	no dependencies found
+2023-03-30T08:45:39.366Z	📦 packing ipaddr.js
+2023-03-30T08:45:41.320Z	✅ ipaddr.js packed
+2023-03-30T08:45:41.321Z	📦 packing proxy-addr
+2023-03-30T08:45:43.353Z	✅ proxy-addr packed
+2023-03-30T08:45:43.354Z	🔍 getting 'qs'
+2023-03-30T08:45:43.359Z	✅ package already installed
+2023-03-30T08:45:43.359Z	🔍 getting dependencies for qs
+2023-03-30T08:45:43.362Z	📋 dependencies: side-channel
+2023-03-30T08:45:43.363Z	🔍 getting 'side-channel'
+2023-03-30T08:45:43.363Z	✅ package already installed
+2023-03-30T08:45:43.364Z	🔍 getting dependencies for side-channel
+2023-03-30T08:45:43.364Z	📋 dependencies: call-bind,get-intrinsic,object-inspect
+2023-03-30T08:45:43.365Z	🔍 getting 'call-bind'
+2023-03-30T08:45:43.365Z	✅ package already installed
+2023-03-30T08:45:43.365Z	🔍 getting dependencies for call-bind
+2023-03-30T08:45:43.366Z	📋 dependencies: function-bind,get-intrinsic
+2023-03-30T08:45:43.366Z	🔍 getting 'function-bind'
+2023-03-30T08:45:43.367Z	✅ package already installed
+2023-03-30T08:45:43.367Z	🔍 getting dependencies for function-bind
+2023-03-30T08:45:43.368Z	no dependencies found
+2023-03-30T08:45:43.369Z	✅ function-bind tarball already exists
+2023-03-30T08:45:43.369Z	🔍 getting 'get-intrinsic'
+2023-03-30T08:45:43.369Z	✅ package already installed
+2023-03-30T08:45:43.370Z	🔍 getting dependencies for get-intrinsic
+2023-03-30T08:45:43.370Z	📋 dependencies: function-bind,has,has-symbols
+2023-03-30T08:45:43.370Z	🔍 getting 'function-bind'
+2023-03-30T08:45:43.372Z	✅ package already installed
+2023-03-30T08:45:43.373Z	🔍 getting dependencies for function-bind
+2023-03-30T08:45:43.374Z	no dependencies found
+2023-03-30T08:45:43.375Z	✅ function-bind tarball already exists
+2023-03-30T08:45:43.376Z	🔍 getting 'has'
+2023-03-30T08:45:43.376Z	✅ package already installed
+2023-03-30T08:45:43.377Z	🔍 getting dependencies for has
+2023-03-30T08:45:43.377Z	📋 dependencies: function-bind
+2023-03-30T08:45:43.377Z	🔍 getting 'function-bind'
+2023-03-30T08:45:43.378Z	✅ package already installed
+2023-03-30T08:45:43.379Z	🔍 getting dependencies for function-bind
+2023-03-30T08:45:43.380Z	no dependencies found
+2023-03-30T08:45:43.381Z	✅ function-bind tarball already exists
+2023-03-30T08:45:43.381Z	✅ has tarball already exists
+2023-03-30T08:45:43.382Z	🔍 getting 'has-symbols'
+2023-03-30T08:45:43.382Z	✅ package already installed
+2023-03-30T08:45:43.382Z	🔍 getting dependencies for has-symbols
+2023-03-30T08:45:43.383Z	no dependencies found
+2023-03-30T08:45:43.384Z	✅ has-symbols tarball already exists
+2023-03-30T08:45:43.384Z	📦 packing get-intrinsic
+2023-03-30T08:45:45.250Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/get-intrinsic
+2023-03-30T08:45:45.251Z	✅ call-bind tarball already exists
+2023-03-30T08:45:45.251Z	🔍 getting 'get-intrinsic'
+2023-03-30T08:45:45.251Z	✅ package already installed
+2023-03-30T08:45:45.252Z	🔍 getting dependencies for get-intrinsic
+2023-03-30T08:45:45.253Z	📋 dependencies: function-bind,has,has-symbols
+2023-03-30T08:45:45.253Z	🔍 getting 'function-bind'
+2023-03-30T08:45:45.256Z	✅ package already installed
+2023-03-30T08:45:45.258Z	🔍 getting dependencies for function-bind
+2023-03-30T08:45:45.259Z	no dependencies found
+2023-03-30T08:45:45.260Z	✅ function-bind tarball already exists
+2023-03-30T08:45:45.261Z	🔍 getting 'has'
+2023-03-30T08:45:45.261Z	✅ package already installed
+2023-03-30T08:45:45.261Z	🔍 getting dependencies for has
+2023-03-30T08:45:45.263Z	📋 dependencies: function-bind
+2023-03-30T08:45:45.264Z	🔍 getting 'function-bind'
+2023-03-30T08:45:45.265Z	✅ package already installed
+2023-03-30T08:45:45.265Z	🔍 getting dependencies for function-bind
+2023-03-30T08:45:45.266Z	no dependencies found
+2023-03-30T08:45:45.267Z	✅ function-bind tarball already exists
+2023-03-30T08:45:45.267Z	✅ has tarball already exists
+2023-03-30T08:45:45.267Z	🔍 getting 'has-symbols'
+2023-03-30T08:45:45.268Z	✅ package already installed
+2023-03-30T08:45:45.268Z	🔍 getting dependencies for has-symbols
+2023-03-30T08:45:45.269Z	no dependencies found
+2023-03-30T08:45:45.269Z	✅ has-symbols tarball already exists
+2023-03-30T08:45:45.270Z	📦 packing get-intrinsic
+2023-03-30T08:45:47.239Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/get-intrinsic
+2023-03-30T08:45:47.239Z	🔍 getting 'object-inspect'
+2023-03-30T08:45:47.240Z	✅ package already installed
+2023-03-30T08:45:47.240Z	🔍 getting dependencies for object-inspect
+2023-03-30T08:45:47.241Z	no dependencies found
+2023-03-30T08:45:47.242Z	📦 packing object-inspect
+2023-03-30T08:45:49.122Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/object-inspect
+2023-03-30T08:45:49.122Z	✅ side-channel tarball already exists
+2023-03-30T08:45:49.123Z	📦 packing qs
+2023-03-30T08:45:50.982Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/qs
+2023-03-30T08:45:50.984Z	🔍 getting 'range-parser'
+2023-03-30T08:45:50.987Z	✅ package already installed
+2023-03-30T08:45:50.987Z	🔍 getting dependencies for range-parser
+2023-03-30T08:45:50.988Z	no dependencies found
+2023-03-30T08:45:50.988Z	📦 packing range-parser
+2023-03-30T08:45:52.927Z	✅ range-parser packed
+2023-03-30T08:45:52.927Z	🔍 getting 'safe-buffer'
+2023-03-30T08:45:52.928Z	✅ package already installed
+2023-03-30T08:45:52.928Z	🔍 getting dependencies for safe-buffer
+2023-03-30T08:45:52.929Z	no dependencies found
+2023-03-30T08:45:52.930Z	✅ safe-buffer tarball already exists
+2023-03-30T08:45:52.931Z	🔍 getting 'send'
+2023-03-30T08:45:52.933Z	✅ package already installed
+2023-03-30T08:45:52.934Z	🔍 getting dependencies for send
+2023-03-30T08:45:52.935Z	📋 dependencies: debug,depd,destroy,encodeurl,escape-html,etag,fresh,http-errors,mime,ms,on-finished,range-parser,statuses
+2023-03-30T08:45:52.935Z	🔍 getting 'debug'
+2023-03-30T08:45:52.936Z	✅ package already installed
+2023-03-30T08:45:52.936Z	🔍 getting dependencies for debug
+2023-03-30T08:45:52.939Z	📋 dependencies: ms
+2023-03-30T08:45:52.939Z	🔍 getting 'ms'
+2023-03-30T08:45:52.939Z	✅ package already installed
+2023-03-30T08:45:52.940Z	🔍 getting dependencies for ms
+2023-03-30T08:45:52.940Z	no dependencies found
+2023-03-30T08:45:52.941Z	✅ ms tarball already exists
+2023-03-30T08:45:52.941Z	✅ debug tarball already exists
+2023-03-30T08:45:52.942Z	🔍 getting 'depd'
+2023-03-30T08:45:52.942Z	✅ package already installed
+2023-03-30T08:45:52.942Z	🔍 getting dependencies for depd
+2023-03-30T08:45:52.943Z	no dependencies found
+2023-03-30T08:45:52.943Z	✅ depd tarball already exists
+2023-03-30T08:45:52.943Z	🔍 getting 'destroy'
+2023-03-30T08:45:52.944Z	✅ package already installed
+2023-03-30T08:45:52.944Z	🔍 getting dependencies for destroy
+2023-03-30T08:45:52.944Z	no dependencies found
+2023-03-30T08:45:52.945Z	✅ destroy tarball already exists
+2023-03-30T08:45:52.945Z	🔍 getting 'encodeurl'
+2023-03-30T08:45:52.946Z	✅ package already installed
+2023-03-30T08:45:52.946Z	🔍 getting dependencies for encodeurl
+2023-03-30T08:45:52.947Z	no dependencies found
+2023-03-30T08:45:52.948Z	✅ encodeurl tarball already exists
+2023-03-30T08:45:52.949Z	🔍 getting 'escape-html'
+2023-03-30T08:45:52.949Z	✅ package already installed
+2023-03-30T08:45:52.950Z	🔍 getting dependencies for escape-html
+2023-03-30T08:45:52.951Z	no dependencies found
+2023-03-30T08:45:52.953Z	✅ escape-html tarball already exists
+2023-03-30T08:45:52.954Z	🔍 getting 'etag'
+2023-03-30T08:45:52.955Z	✅ package already installed
+2023-03-30T08:45:52.955Z	🔍 getting dependencies for etag
+2023-03-30T08:45:52.956Z	no dependencies found
+2023-03-30T08:45:52.956Z	✅ etag tarball already exists
+2023-03-30T08:45:52.957Z	🔍 getting 'fresh'
+2023-03-30T08:45:52.957Z	✅ package already installed
+2023-03-30T08:45:52.957Z	🔍 getting dependencies for fresh
+2023-03-30T08:45:52.958Z	no dependencies found
+2023-03-30T08:45:52.959Z	✅ fresh tarball already exists
+2023-03-30T08:45:52.959Z	🔍 getting 'http-errors'
+2023-03-30T08:45:52.960Z	✅ package already installed
+2023-03-30T08:45:52.960Z	🔍 getting dependencies for http-errors
+2023-03-30T08:45:52.961Z	📋 dependencies: depd,inherits,setprototypeof,statuses,toidentifier
+2023-03-30T08:45:52.961Z	🔍 getting 'depd'
+2023-03-30T08:45:52.962Z	✅ package already installed
+2023-03-30T08:45:52.962Z	🔍 getting dependencies for depd
+2023-03-30T08:45:52.963Z	no dependencies found
+2023-03-30T08:45:52.963Z	✅ depd tarball already exists
+2023-03-30T08:45:52.964Z	🔍 getting 'inherits'
+2023-03-30T08:45:52.965Z	✅ package already installed
+2023-03-30T08:45:52.965Z	🔍 getting dependencies for inherits
+2023-03-30T08:45:52.966Z	no dependencies found
+2023-03-30T08:45:52.966Z	✅ inherits tarball already exists
+2023-03-30T08:45:52.967Z	🔍 getting 'setprototypeof'
+2023-03-30T08:45:52.967Z	✅ package already installed
+2023-03-30T08:45:52.968Z	🔍 getting dependencies for setprototypeof
+2023-03-30T08:45:52.968Z	no dependencies found
+2023-03-30T08:45:52.969Z	✅ setprototypeof tarball already exists
+2023-03-30T08:45:52.969Z	🔍 getting 'statuses'
+2023-03-30T08:45:52.970Z	✅ package already installed
+2023-03-30T08:45:52.970Z	🔍 getting dependencies for statuses
+2023-03-30T08:45:52.970Z	no dependencies found
+2023-03-30T08:45:52.971Z	✅ statuses tarball already exists
+2023-03-30T08:45:52.971Z	🔍 getting 'toidentifier'
+2023-03-30T08:45:52.972Z	✅ package already installed
+2023-03-30T08:45:52.972Z	🔍 getting dependencies for toidentifier
+2023-03-30T08:45:52.972Z	no dependencies found
+2023-03-30T08:45:52.973Z	✅ toidentifier tarball already exists
+2023-03-30T08:45:52.974Z	✅ http-errors tarball already exists
+2023-03-30T08:45:52.974Z	🔍 getting 'mime'
+2023-03-30T08:45:52.974Z	✅ package already installed
+2023-03-30T08:45:52.975Z	🔍 getting dependencies for mime
+2023-03-30T08:45:52.975Z	no dependencies found
+2023-03-30T08:45:52.976Z	📦 packing mime
+2023-03-30T08:45:54.927Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/mime
+2023-03-30T08:45:54.928Z	🔍 getting 'ms'
+2023-03-30T08:45:54.928Z	✅ package already installed
+2023-03-30T08:45:54.929Z	🔍 getting dependencies for ms
+2023-03-30T08:45:54.929Z	no dependencies found
+2023-03-30T08:45:54.930Z	✅ ms tarball already exists
+2023-03-30T08:45:54.930Z	🔍 getting 'on-finished'
+2023-03-30T08:45:54.931Z	✅ package already installed
+2023-03-30T08:45:54.931Z	🔍 getting dependencies for on-finished
+2023-03-30T08:45:54.931Z	📋 dependencies: ee-first
+2023-03-30T08:45:54.932Z	🔍 getting 'ee-first'
+2023-03-30T08:45:54.932Z	✅ package already installed
+2023-03-30T08:45:54.934Z	🔍 getting dependencies for ee-first
+2023-03-30T08:45:54.936Z	no dependencies found
+2023-03-30T08:45:54.937Z	✅ ee-first tarball already exists
+2023-03-30T08:45:54.938Z	✅ on-finished tarball already exists
+2023-03-30T08:45:54.939Z	🔍 getting 'range-parser'
+2023-03-30T08:45:54.939Z	✅ package already installed
+2023-03-30T08:45:54.940Z	🔍 getting dependencies for range-parser
+2023-03-30T08:45:54.940Z	no dependencies found
+2023-03-30T08:45:54.941Z	✅ range-parser tarball already exists
+2023-03-30T08:45:54.941Z	🔍 getting 'statuses'
+2023-03-30T08:45:54.941Z	✅ package already installed
+2023-03-30T08:45:54.941Z	🔍 getting dependencies for statuses
+2023-03-30T08:45:54.942Z	no dependencies found
+2023-03-30T08:45:54.942Z	✅ statuses tarball already exists
+2023-03-30T08:45:54.943Z	📦 packing send
+2023-03-30T08:45:56.883Z	✅ send packed
+2023-03-30T08:45:56.883Z	🔍 getting 'serve-static'
+2023-03-30T08:45:56.884Z	✅ package already installed
+2023-03-30T08:45:56.884Z	🔍 getting dependencies for serve-static
+2023-03-30T08:45:56.885Z	📋 dependencies: encodeurl,escape-html,parseurl,send
+2023-03-30T08:45:56.886Z	🔍 getting 'encodeurl'
+2023-03-30T08:45:56.887Z	✅ package already installed
+2023-03-30T08:45:56.888Z	🔍 getting dependencies for encodeurl
+2023-03-30T08:45:56.889Z	no dependencies found
+2023-03-30T08:45:56.889Z	✅ encodeurl tarball already exists
+2023-03-30T08:45:56.890Z	🔍 getting 'escape-html'
+2023-03-30T08:45:56.890Z	✅ package already installed
+2023-03-30T08:45:56.890Z	🔍 getting dependencies for escape-html
+2023-03-30T08:45:56.891Z	no dependencies found
+2023-03-30T08:45:56.891Z	✅ escape-html tarball already exists
+2023-03-30T08:45:56.892Z	🔍 getting 'parseurl'
+2023-03-30T08:45:56.892Z	✅ package already installed
+2023-03-30T08:45:56.892Z	🔍 getting dependencies for parseurl
+2023-03-30T08:45:56.893Z	no dependencies found
+2023-03-30T08:45:56.893Z	✅ parseurl tarball already exists
+2023-03-30T08:45:56.893Z	🔍 getting 'send'
+2023-03-30T08:45:56.894Z	✅ package already installed
+2023-03-30T08:45:56.894Z	🔍 getting dependencies for send
+2023-03-30T08:45:56.895Z	📋 dependencies: debug,depd,destroy,encodeurl,escape-html,etag,fresh,http-errors,mime,ms,on-finished,range-parser,statuses
+2023-03-30T08:45:56.895Z	🔍 getting 'debug'
+2023-03-30T08:45:56.895Z	✅ package already installed
+2023-03-30T08:45:56.895Z	🔍 getting dependencies for debug
+2023-03-30T08:45:56.896Z	📋 dependencies: ms
+2023-03-30T08:45:56.896Z	🔍 getting 'ms'
+2023-03-30T08:45:56.896Z	✅ package already installed
+2023-03-30T08:45:56.897Z	🔍 getting dependencies for ms
+2023-03-30T08:45:56.897Z	no dependencies found
+2023-03-30T08:45:56.898Z	✅ ms tarball already exists
+2023-03-30T08:45:56.899Z	✅ debug tarball already exists
+2023-03-30T08:45:56.899Z	🔍 getting 'depd'
+2023-03-30T08:45:56.900Z	✅ package already installed
+2023-03-30T08:45:56.900Z	🔍 getting dependencies for depd
+2023-03-30T08:45:56.901Z	no dependencies found
+2023-03-30T08:45:56.903Z	✅ depd tarball already exists
+2023-03-30T08:45:56.903Z	🔍 getting 'destroy'
+2023-03-30T08:45:56.904Z	✅ package already installed
+2023-03-30T08:45:56.904Z	🔍 getting dependencies for destroy
+2023-03-30T08:45:56.905Z	no dependencies found
+2023-03-30T08:45:56.905Z	✅ destroy tarball already exists
+2023-03-30T08:45:56.905Z	🔍 getting 'encodeurl'
+2023-03-30T08:45:56.906Z	✅ package already installed
+2023-03-30T08:45:56.906Z	🔍 getting dependencies for encodeurl
+2023-03-30T08:45:56.906Z	no dependencies found
+2023-03-30T08:45:56.907Z	✅ encodeurl tarball already exists
+2023-03-30T08:45:56.907Z	🔍 getting 'escape-html'
+2023-03-30T08:45:56.907Z	✅ package already installed
+2023-03-30T08:45:56.908Z	🔍 getting dependencies for escape-html
+2023-03-30T08:45:56.908Z	no dependencies found
+2023-03-30T08:45:56.909Z	✅ escape-html tarball already exists
+2023-03-30T08:45:56.909Z	🔍 getting 'etag'
+2023-03-30T08:45:56.909Z	✅ package already installed
+2023-03-30T08:45:56.909Z	🔍 getting dependencies for etag
+2023-03-30T08:45:56.910Z	no dependencies found
+2023-03-30T08:45:56.910Z	✅ etag tarball already exists
+2023-03-30T08:45:56.911Z	🔍 getting 'fresh'
+2023-03-30T08:45:56.911Z	✅ package already installed
+2023-03-30T08:45:56.911Z	🔍 getting dependencies for fresh
+2023-03-30T08:45:56.912Z	no dependencies found
+2023-03-30T08:45:56.912Z	✅ fresh tarball already exists
+2023-03-30T08:45:56.912Z	🔍 getting 'http-errors'
+2023-03-30T08:45:56.913Z	✅ package already installed
+2023-03-30T08:45:56.913Z	🔍 getting dependencies for http-errors
+2023-03-30T08:45:56.914Z	📋 dependencies: depd,inherits,setprototypeof,statuses,toidentifier
+2023-03-30T08:45:56.914Z	🔍 getting 'depd'
+2023-03-30T08:45:56.914Z	✅ package already installed
+2023-03-30T08:45:56.914Z	🔍 getting dependencies for depd
+2023-03-30T08:45:56.915Z	no dependencies found
+2023-03-30T08:45:56.915Z	✅ depd tarball already exists
+2023-03-30T08:45:56.916Z	🔍 getting 'inherits'
+2023-03-30T08:45:56.916Z	✅ package already installed
+2023-03-30T08:45:56.916Z	🔍 getting dependencies for inherits
+2023-03-30T08:45:56.917Z	no dependencies found
+2023-03-30T08:45:56.917Z	✅ inherits tarball already exists
+2023-03-30T08:45:56.917Z	🔍 getting 'setprototypeof'
+2023-03-30T08:45:56.918Z	✅ package already installed
+2023-03-30T08:45:56.919Z	🔍 getting dependencies for setprototypeof
+2023-03-30T08:45:56.919Z	no dependencies found
+2023-03-30T08:45:56.920Z	✅ setprototypeof tarball already exists
+2023-03-30T08:45:56.921Z	🔍 getting 'statuses'
+2023-03-30T08:45:56.921Z	✅ package already installed
+2023-03-30T08:45:56.921Z	🔍 getting dependencies for statuses
+2023-03-30T08:45:56.922Z	no dependencies found
+2023-03-30T08:45:56.922Z	✅ statuses tarball already exists
+2023-03-30T08:45:56.923Z	🔍 getting 'toidentifier'
+2023-03-30T08:45:56.923Z	✅ package already installed
+2023-03-30T08:45:56.923Z	🔍 getting dependencies for toidentifier
+2023-03-30T08:45:56.924Z	no dependencies found
+2023-03-30T08:45:56.924Z	✅ toidentifier tarball already exists
+2023-03-30T08:45:56.925Z	✅ http-errors tarball already exists
+2023-03-30T08:45:56.925Z	🔍 getting 'mime'
+2023-03-30T08:45:56.925Z	✅ package already installed
+2023-03-30T08:45:56.926Z	🔍 getting dependencies for mime
+2023-03-30T08:45:56.926Z	no dependencies found
+2023-03-30T08:45:56.926Z	📦 packing mime
+2023-03-30T08:45:59.101Z	❗️ Error: Command failed: npm pack C:\Users\Eilamas\Documents\codeProjects\packages-downloader\src\2-utils/../../node_modules/mime
+2023-03-30T08:45:59.102Z	🔍 getting 'ms'
+2023-03-30T08:45:59.103Z	✅ package already installed
+2023-03-30T08:45:59.103Z	🔍 getting dependencies for ms
+2023-03-30T08:45:59.104Z	no dependencies found
+2023-03-30T08:45:59.105Z	✅ ms tarball already exists
+2023-03-30T08:45:59.108Z	🔍 getting 'on-finished'
+2023-03-30T08:45:59.111Z	✅ package already installed
+2023-03-30T08:45:59.112Z	🔍 getting dependencies for on-finished
+2023-03-30T08:45:59.112Z	📋 dependencies: ee-first
+2023-03-30T08:45:59.113Z	🔍 getting 'ee-first'
+2023-03-30T08:45:59.113Z	✅ package already installed
+2023-03-30T08:45:59.113Z	🔍 getting dependencies for ee-first
+2023-03-30T08:45:59.114Z	no dependencies found
+2023-03-30T08:45:59.114Z	✅ ee-first tarball already exists
+2023-03-30T08:45:59.115Z	✅ on-finished tarball already exists
+2023-03-30T08:45:59.115Z	🔍 getting 'range-parser'
+2023-03-30T08:45:59.116Z	✅ package already installed
+2023-03-30T08:45:59.116Z	🔍 getting dependencies for range-parser
+2023-03-30T08:45:59.116Z	no dependencies found
+2023-03-30T08:45:59.117Z	✅ range-parser tarball already exists
+2023-03-30T08:45:59.117Z	🔍 getting 'statuses'
+2023-03-30T08:45:59.117Z	✅ package already installed
+2023-03-30T08:45:59.118Z	🔍 getting dependencies for statuses
+2023-03-30T08:45:59.118Z	no dependencies found
+2023-03-30T08:45:59.119Z	✅ statuses tarball already exists
+2023-03-30T08:45:59.119Z	✅ send tarball already exists
+2023-03-30T08:45:59.121Z	📦 packing serve-static
+2023-03-30T08:46:01.055Z	✅ serve-static packed
+2023-03-30T08:46:01.055Z	🔍 getting 'setprototypeof'
+2023-03-30T08:46:01.057Z	✅ package already installed
+2023-03-30T08:46:01.057Z	🔍 getting dependencies for setprototypeof
+2023-03-30T08:46:01.060Z	no dependencies found
+2023-03-30T08:46:01.061Z	✅ setprototypeof tarball already exists
+2023-03-30T08:46:01.062Z	🔍 getting 'statuses'
+2023-03-30T08:46:01.062Z	✅ package already installed
+2023-03-30T08:46:01.062Z	🔍 getting dependencies for statuses
+2023-03-30T08:46:01.063Z	no dependencies found
+2023-03-30T08:46:01.064Z	✅ statuses tarball already exists
+2023-03-30T08:46:01.064Z	🔍 getting 'type-is'
+2023-03-30T08:46:01.065Z	✅ package already installed
+2023-03-30T08:46:01.065Z	🔍 getting dependencies for type-is
+2023-03-30T08:46:01.065Z	📋 dependencies: media-typer,mime-types
+2023-03-30T08:46:01.066Z	🔍 getting 'media-typer'
+2023-03-30T08:46:01.066Z	✅ package already installed
+2023-03-30T08:46:01.066Z	🔍 getting dependencies for media-typer
+2023-03-30T08:46:01.067Z	no dependencies found
+2023-03-30T08:46:01.068Z	✅ media-typer tarball already exists
+2023-03-30T08:46:01.068Z	🔍 getting 'mime-types'
+2023-03-30T08:46:01.068Z	✅ package already installed
+2023-03-30T08:46:01.069Z	🔍 getting dependencies for mime-types
+2023-03-30T08:46:01.069Z	📋 dependencies: mime-db
+2023-03-30T08:46:01.070Z	🔍 getting 'mime-db'
+2023-03-30T08:46:01.070Z	✅ package already installed
+2023-03-30T08:46:01.070Z	🔍 getting dependencies for mime-db
+2023-03-30T08:46:01.071Z	no dependencies found
+2023-03-30T08:46:01.071Z	✅ mime-db tarball already exists
+2023-03-30T08:46:01.072Z	✅ mime-types tarball already exists
+2023-03-30T08:46:01.077Z	✅ type-is tarball already exists
+2023-03-30T08:46:01.078Z	🔍 getting 'utils-merge'
+2023-03-30T08:46:01.078Z	✅ package already installed
+2023-03-30T08:46:01.078Z	🔍 getting dependencies for utils-merge
+2023-03-30T08:46:01.079Z	no dependencies found
+2023-03-30T08:46:01.080Z	📦 packing utils-merge
+2023-03-30T08:46:03.048Z	✅ utils-merge packed
+2023-03-30T08:46:03.048Z	🔍 getting 'vary'
+2023-03-30T08:46:03.048Z	✅ package already installed
+2023-03-30T08:46:03.049Z	🔍 getting dependencies for vary
+2023-03-30T08:46:03.049Z	no dependencies found
+2023-03-30T08:46:03.050Z	📦 packing vary
+2023-03-30T08:46:05.541Z	✅ vary packed
+2023-03-30T08:46:05.541Z	📦 packing express
+2023-03-30T08:46:07.661Z	✅ express packed
+------------------------------------------------- 
+2023-03-30T08:46:07.665Z	total of 58 packages: [accepts,array-flatten,body-parser,bytes,call-bind,content-disposition,content-type,cookie,cookie-signature,debug,depd,destroy,ee-first,encodeurl,escape-html,etag,express,finalhandler,forwarded,fresh,function-bind,get-intrinsic,has,has-symbols,http-errors,iconv-lite,inherits,ipaddr.js,media-typer,merge-descriptors,methods,mime,mime-db,mime-types,ms,negotiator,object-inspect,on-finished,parseurl,path-to-regexp,proxy-addr,qs,random,range-parser,raw-body,safe-buffer,safer-buffer,seedrandom,send,serve-static,setprototypeof,side-channel,statuses,toidentifier,type-is,unpipe,utils-merge,vary]
+2023-03-30T08:46:07.666Z	packed: 54 packages: [accepts-1.3.8,array-flatten-1.1.1,body-parser-1.20.1,bytes-3.1.2,call-bind-1.0.2,content-disposition-0.5.4,content-type-1.0.5,cookie-0.5.0,cookie-signature-1.0.6,debug-4.3.4,depd-2.0.0,destroy-1.2.0,ee-first-1.1.1,encodeurl-1.0.2,escape-html-1.0.3,etag-1.8.1,express-4.18.2,finalhandler-1.2.0,forwarded-0.2.0,fresh-0.5.2,function-bind-1.1.1,has-1.0.3,has-symbols-1.0.3,http-errors-2.0.0,iconv-lite-0.4.24,inherits-2.0.4,ipaddr.js-1.9.1,media-typer-0.3.0,merge-descriptors-1.0.1,methods-1.1.2,mime-db-1.52.0,mime-types-2.1.35,ms-2.1.2,negotiator-0.6.3,on-finished-2.4.1,parseurl-1.3.3,path-to-regexp-0.1.7,proxy-addr-2.0.7,random-4.1.0,range-parser-1.2.1,raw-body-2.5.1,safe-buffer-5.2.1,safer-buffer-2.1.2,seedrandom-3.0.5,send-0.18.0,serve-static-1.15.0,setprototypeof-1.2.0,side-channel-1.0.4,statuses-2.0.1,toidentifier-1.0.1,type-is-1.6.18,unpipe-1.0.0,utils-merge-1.0.1,vary-1.1.2]
+2023-03-30T08:46:07.667Z	not packed: 4 packages: [get-intrinsic,mime,object-inspect,qs]
+2023-03-30T08:46:07.668Z	zipping all packages
+------------------------------------------------- 

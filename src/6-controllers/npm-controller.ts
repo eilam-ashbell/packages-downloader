@@ -10,7 +10,7 @@ router.get(
     try {
       // get package name from request
       const packageName: string = request.params.packageName;
-      const recursive: boolean = JSON.parse(request.query.recursive);
+      const recursive: boolean = JSON.parse(request.query.recursive || true);
       // create zip file & data with all required packages
       const zip = npmLogic.zipPackagesReqursivly(packageName, {
         recursive: recursive,
